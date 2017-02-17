@@ -24,7 +24,7 @@ extension Date {
         return nil
     }
     
-    private func dateFromComponents(_ date: Date) -> Date? {
+    fileprivate func dateFromComponents(_ date: Date) -> Date? {
         let calender   = Calendar.current
         let components = calender.dateComponents([.year, .month, .day], from: date)
         return calender.date(from: components)

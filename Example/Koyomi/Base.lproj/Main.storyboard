@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +23,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N6y-Sa-BPO">
+                                <rect key="frame" x="96.5" y="35" width="182" height="29"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -30,11 +34,13 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrJ-h9-b09">
+                                <rect key="frame" x="166.5" y="83" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-jI-g7D" customClass="Koyomi" customModule="Koyomi">
+                                <rect key="frame" x="37.5" y="118.5" width="300" height="260"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="5A2-hB-Awy"/>
@@ -72,114 +78,133 @@
                                 </userDefinedRuntimeAttributes>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILJ-O9-Aaa" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="31" y="398.5" width="70" height="30"/>
                                 <state key="normal" title="monotone"/>
                                 <connections>
                                     <action selector="tappedMonotone:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="amg-iz-HZf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8R-yy-gHj" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="116" y="398.5" width="61" height="30"/>
                                 <state key="normal" title="standard"/>
                                 <connections>
                                     <action selector="tappedStandard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xFD-vL-psG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyB-al-qHt" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="192" y="398.5" width="30" height="30"/>
                                 <state key="normal" title="red"/>
                                 <connections>
                                     <action selector="tappedRedButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rhL-G1-ZDi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgA-TV-hAJ" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="237" y="398.5" width="48" height="30"/>
                                 <state key="normal" title="orange"/>
                                 <connections>
                                     <action selector="tappedOrange:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tUg-1M-RQL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0C-o4-AKh" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="31" y="438.5" width="43" height="30"/>
                                 <state key="normal" title="yellow"/>
                                 <connections>
                                     <action selector="tappedYellow:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="erZ-rB-fkq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NvN-jd-Klf" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="89" y="438.5" width="56" height="30"/>
                                 <state key="normal" title="tealBlue"/>
                                 <connections>
                                     <action selector="tappedTealBlue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ozm-22-fNb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zf4-j4-Fc9" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="160" y="438.5" width="30" height="30"/>
                                 <state key="normal" title="blue"/>
                                 <connections>
                                     <action selector="tappedBlue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ri9-s1-Hs4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkD-bP-1CD" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="205" y="438.5" width="44" height="30"/>
                                 <state key="normal" title="purple"/>
                                 <connections>
                                     <action selector="purpleButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4A4-iR-iwO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ap-hs-gl0" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="31" y="483.5" width="40" height="30"/>
                                 <state key="normal" title="green"/>
                                 <connections>
                                     <action selector="tappedGreen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DZ1-sQ-pFz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eG-vF-aez" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="86" y="483.5" width="30" height="30"/>
                                 <state key="normal" title="pink"/>
                                 <connections>
                                     <action selector="tappedPink:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ygi-7n-662"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-XD-S2q" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="131" y="483.5" width="72" height="30"/>
                                 <state key="normal" title="deepBlack"/>
                                 <connections>
                                     <action selector="tappedDeepBlack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pse-cP-3uG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMK-ui-kwO" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="218" y="483.5" width="62" height="30"/>
                                 <state key="normal" title="deepRed"/>
                                 <connections>
                                     <action selector="tappedDeepRed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="u0n-Zp-VT4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-bS-rq5" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="31" y="528.5" width="86" height="30"/>
                                 <state key="normal" title="deepOrange"/>
                                 <connections>
                                     <action selector="tappedDeepOrange:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z2s-JM-M4p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-Sl-YyP" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="132" y="528.5" width="77" height="30"/>
                                 <state key="normal" title="deepYellow"/>
                                 <connections>
                                     <action selector="tappedDeepYellow:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ahH-Fi-COL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSG-Nh-IRN" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="224" y="528.5" width="92" height="30"/>
                                 <state key="normal" title="deepTealBlue"/>
                                 <connections>
                                     <action selector="tappedDeepTealBlueButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GHs-hj-AqM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSV-t8-0LO" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="31" y="573.5" width="65" height="30"/>
                                 <state key="normal" title="deepBlue"/>
                                 <connections>
                                     <action selector="tappedDeepBlue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="l9f-Gg-V4t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TD-du-AnO" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="111" y="573.5" width="79" height="30"/>
                                 <state key="normal" title="deepPurple"/>
                                 <connections>
                                     <action selector="tappedDeepPurple:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eOW-r3-edr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kY-Ny-6Bl" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="205" y="573.5" width="76" height="30"/>
                                 <state key="normal" title="deepGreen"/>
                                 <connections>
                                     <action selector="tappedDeepGreen:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="C0U-5G-eAW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXD-kG-0Mw" customClass="MyButton" customModule="Koyomi_Example" customModuleProvider="target">
+                                <rect key="frame" x="31" y="618.5" width="64" height="30"/>
                                 <state key="normal" title="deepPink"/>
                                 <connections>
                                     <action selector="tappedDeepPink:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="apn-9y-Zm8"/>

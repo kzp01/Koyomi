@@ -217,7 +217,7 @@ final class DateModel: NSObject {
         
         if let start = sequenceDates.start, let period = start.daysSince(selectedDate), sequenceDates.end == nil && start != selectedDate {
             return abs(period) + 1
-        } else if let start = sequenceDates.start , sequenceDates.end == nil && start == selectedDate {
+        } else if let start = sequenceDates.start, sequenceDates.end == nil && start == selectedDate {
             return 0
         } else {
             return 1
@@ -251,7 +251,7 @@ final class DateModel: NSObject {
         return highlightedDates.contains(date)
     }
     
-    func setHighlightedDates(from: Date, to: Date?) {
+    func setHighlightedDates(_ from: Date, to: Date?) {
         guard let fromDate = from.formated() else { return }
         
         if !highlightedDates.contains(fromDate) {

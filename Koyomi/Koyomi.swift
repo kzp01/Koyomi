@@ -317,26 +317,26 @@ final public class Koyomi: UICollectionView {
     }
     
     @discardableResult
-    public func select(date: Date, to toDate: Date? = nil) -> Self {
+    public func select(_ date: Date, to toDate: Date? = nil) -> Self {
         model.select(from: date, to: toDate)
         return self
     }
     
     @discardableResult
-    public func select(dates: [Date]) -> Self {
-        dates.forEach { [weak self] date in self?.select(date: date) }
+    public func selected(_ dates: [Date]) -> Self {
+        dates.forEach { [weak self] date in self?.selected(dates) }
         return self
     }
     
     @discardableResult
-    public func unselect(date: Date, to toDate: Date? = nil) -> Self {
+    public func unselect(_ date: Date, to toDate: Date? = nil) -> Self {
         model.unselect(from: date, to: toDate)
         return self
     }
     
     @discardableResult
-    public func unselect(dates: [Date]) -> Self {
-        dates.forEach { [weak self] date in self?.unselect(date: date) }
+    public func unselect(_ dates: [Date]) -> Self {
+        dates.forEach { [weak self] date in self?.unselect(date) }
         return self
     }
     
@@ -348,14 +348,14 @@ final public class Koyomi: UICollectionView {
     
     @discardableResult
     public func setDayColor(_ dayColor: UIColor, of date: Date, to toDate: Date? = nil) -> Self {
-        model.setHighlightedDates(from: date, to: toDate)
+        model.setHighlightedDates(date, to: toDate)
         highlightedDayColor = dayColor
         return self
     }
     
     @discardableResult
     public func setDayBackgrondColor(_ backgroundColor: UIColor, of date: Date, to toDate: Date? = nil) -> Self {
-        model.setHighlightedDates(from: date, to: toDate)
+        model.setHighlightedDates(date, to: toDate)
         highlightedDayBackgrondColor = backgroundColor
         return self
     }
